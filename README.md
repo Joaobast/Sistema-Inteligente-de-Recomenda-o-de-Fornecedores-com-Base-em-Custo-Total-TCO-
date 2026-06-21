@@ -1,17 +1,14 @@
-# 📦 Sistema Inteligente de Recomendação de Fornecedores com Base em Custo Total (TCO)
+#  Sistema Inteligente de Recomendação de Fornecedores com Base em Custo Total (TCO)
 
-![Python](https://img.shields.io/badge/Python-3.x-blue?style=flat&logo=python)
-![Machine Learning](https://img.shields.io/badge/Machine%20Learning-Scikit--Learn-orange?style=flat)
-![Status](https://img.shields.io/badge/Status-Conclu%C3%ADdo-success?style=flat)
 
-## 📌 Sobre o Projeto
+##  Sobre o Projeto
 Este projeto consiste no desenvolvimento de um sistema de Inteligência Artificial aplicado ao setor de suprimentos. O objetivo principal é otimizar a escolha de fornecedores utilizando dados históricos de compras para recomendar as melhores opções com base no **Custo Total de Aquisição (TCO)**, indo muito além da tradicional e limitada análise baseada apenas no menor preço unitário.
 
 A solução foca em democratizar o uso da inteligência analítica para pequenas e médias empresas, oferecendo uma ferramenta de apoio à decisão estratégica que avalia fatores logísticos, operacionais e históricos de forma automatizada.
 
 ---
 
-## 🎯 O Problema vs. A Solução
+##  O Problema vs. A Solução
 
 **O Problema:** 
 O setor de compras frequentemente decide alocações de recursos baseando-se no menor preço de etiqueta. Essa prática ignora custos ocultos e fatores de risco críticos, como fretes abusivos, atrasos constantes na entrega e falta de confiabilidade do fornecedor, o que no fim gera prejuízos e ineficiência na cadeia produtiva.
@@ -21,7 +18,7 @@ A implementação de modelos de aprendizado de máquina (Machine Learning) que a
 
 ---
 
-## 🚀 Principais Funcionalidades
+## Principais Funcionalidades
 
 * **Cálculo Preditivo de TCO:** Avaliação simultânea de preço, custo de frete, prazo médio de entrega, histórico de atrasos e índice de confiabilidade.
 * **Motor de Recomendação Baseado em ML:** Geração automática de rankings justificando o motivo da escolha de cada fornecedor.
@@ -31,7 +28,7 @@ A implementação de modelos de aprendizado de máquina (Machine Learning) que a
 
 ---
 
-## 🛠️ Arquitetura e Tecnologias Utilizadas
+##  Arquitetura e Tecnologias Utilizadas
 
 O sistema foi estruturado em camadas (Apresentação, Aplicação e Inteligência Artificial) garantindo escalabilidade e facilidade de manutenção.
 
@@ -50,23 +47,7 @@ O sistema foi estruturado em camadas (Apresentação, Aplicação e Inteligênci
 
 ---
 
-## 📊 Avaliação e Validação dos Modelos
-Para garantir que as recomendações do motor sejam precisas e seguras para a tomada de decisão, os algoritmos foram submetidos a métricas estatísticas rigorosas para avaliar o erro de previsão de custos, incluindo:
-* **MAE (Erro Absoluto Médio)**
-* **RMSE (Raiz do Erro Quadrático Médio)**
-* **$R^{2}$ (Coeficiente de Determinação)**
-
----
-
-## 🔮 Trabalhos Futuros
-A evolução contínua da ferramenta prevê a implementação das seguintes melhorias:
-- Implementação de algoritmos de **Deep Learning** para análise de padrões não lineares complexos.
-- Integração via API diretamente com sistemas ERP de mercado.
-- Incorporação de variáveis externas ao cálculo de TCO (variações cambiais, riscos geopolíticos e indicadores macroeconômicos).
-
----
-
-## 👨‍💻 Autor
+##  Autor
 
 **João Vitor da Silva Bast**  
 *Desenvolvedor com forte base em Python, focado em pesquisa operacional, modelagem matemática e construção de soluções inteligentes baseadas em dados.*
