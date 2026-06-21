@@ -1,30 +1,76 @@
-# [cite_start]Sistema Inteligente de Recomendação de Fornecedores com Base em Custo Total (TCO) [cite: 5]
+# 📦 Sistema Inteligente de Recomendação de Fornecedores com Base em Custo Total (TCO)
+
+![Python](https://img.shields.io/badge/Python-3.x-blue?style=flat&logo=python)
+![Machine Learning](https://img.shields.io/badge/Machine%20Learning-Scikit--Learn-orange?style=flat)
+![Status](https://img.shields.io/badge/Status-Conclu%C3%ADdo-success?style=flat)
 
 ## 📌 Sobre o Projeto
-[cite_start]Este projeto consiste no desenvolvimento de um sistema de Inteligência Artificial aplicado ao setor de suprimentos, visando otimizar a escolha de fornecedores[cite: 8]. 
+Este projeto consiste no desenvolvimento de um sistema de Inteligência Artificial aplicado ao setor de suprimentos. O objetivo principal é otimizar a escolha de fornecedores utilizando dados históricos de compras para recomendar as melhores opções com base no **Custo Total de Aquisição (TCO)**, indo muito além da tradicional e limitada análise baseada apenas no menor preço unitário.
 
-[cite_start]Tradicionalmente, a seleção é feita apenas pelo menor preço unitário[cite: 16]. [cite_start]A proposta desta solução é utilizar dados históricos de compras para recomendar os melhores fornecedores com base no **Custo Total de Aquisição (TCO)**, considerando fatores logísticos e operacionais, como frete, prazo de entrega e confiabilidade[cite: 9, 11]. [cite_start]O objetivo é garantir uma tomada de decisão mais eficiente, estratégica e orientada por dados[cite: 9, 112].
+A solução foca em democratizar o uso da inteligência analítica para pequenas e médias empresas, oferecendo uma ferramenta de apoio à decisão estratégica que avalia fatores logísticos, operacionais e históricos de forma automatizada.
+
+---
+
+## 🎯 O Problema vs. A Solução
+
+**O Problema:** 
+O setor de compras frequentemente decide alocações de recursos baseando-se no menor preço de etiqueta. Essa prática ignora custos ocultos e fatores de risco críticos, como fretes abusivos, atrasos constantes na entrega e falta de confiabilidade do fornecedor, o que no fim gera prejuízos e ineficiência na cadeia produtiva.
+
+**A Solução:** 
+A implementação de modelos de aprendizado de máquina (Machine Learning) que analisam a base histórica de compras para prever o TCO futuro. O sistema cruza dados financeiros e logísticos para gerar um ranking dinâmico (Top 3) com os fornecedores que realmente representam o melhor custo-benefício e menor risco para a organização.
+
+---
 
 ## 🚀 Principais Funcionalidades
-* [cite_start]**Motor de Recomendação Baseado em TCO:** Cálculo automático do custo preditivo e geração de um ranking (Top 3) com as melhores opções para uma necessidade de compra[cite: 36, 58, 66].
-* [cite_start]**Análise Multicritério:** Integração simultânea de variáveis como preço unitário, custo de frete, prazo médio de entrega, índice de atrasos e confiabilidade[cite: 54, 65, 79].
-* [cite_start]**Dashboard Interativo:** Interface web simples que exibe os resultados e os indicadores que justificam a recomendação do algoritmo, garantindo transparência[cite: 67, 71, 86].
-* [cite_start]**Aprendizado Contínuo:** Utilização de modelos de Machine Learning que aprendem e adaptam suas previsões conforme novos dados são incorporados à base histórica[cite: 81, 82].
 
-## 🛠️ Arquitetura e Tecnologias
-[cite_start]O sistema foi estruturado em camadas (apresentação, aplicação e inteligência artificial) para facilitar a escalabilidade[cite: 85, 90]. 
+* **Cálculo Preditivo de TCO:** Avaliação simultânea de preço, custo de frete, prazo médio de entrega, histórico de atrasos e índice de confiabilidade.
+* **Motor de Recomendação Baseado em ML:** Geração automática de rankings justificando o motivo da escolha de cada fornecedor.
+* **Módulo de Aprendizado Contínuo:** O algoritmo recalibra suas previsões conforme novos dados de compras e entregas são inseridos no banco de dados, adaptando-se a mudanças no comportamento dos fornecedores.
+* **Dashboard Interativo (Apoio à Decisão):** Uma interface web clara e intuitiva para que gestores consultem recomendações sem necessidade de conhecimentos técnicos em dados.
+* **Análise Comparativa:** Diferente de softwares corporativos de alto custo (como SAP Ariba e Oracle Fusion), este sistema tem baixo atrito de implantação e foco direto na recomendação analítica.
 
-* [cite_start]**Linguagem Principal:** Python [cite: 96]
-* [cite_start]**Machine Learning & Processamento de Dados:** Scikit-Learn, Pandas, NumPy [cite: 91, 97, 99]
-* [cite_start]**Banco de Dados:** PostgreSQL [cite: 97]
-* [cite_start]**Backend:** API desenvolvida com framework Flask ou FastAPI [cite: 93]
-* [cite_start]**Frontend / Interface:** HTML, CSS e JavaScript [cite: 98]
+---
 
-## 📊 Avaliação de Desempenho
-[cite_start]Para garantir a confiabilidade das recomendações, os modelos preditivos (como Random Forest e Gradient Boosting) são avaliados por métricas estatísticas rigorosas[cite: 57, 59, 60], incluindo:
-* [cite_start]Erro Absoluto Médio (MAE) [cite: 59]
-* [cite_start]Raiz do Erro Quadrático Médio (RMSE) [cite: 59]
-* [cite_start]Coeficiente de Determinação ($R^{2}$) [cite: 59]
+## 🛠️ Arquitetura e Tecnologias Utilizadas
 
-## 💡 Inovação e Diferencial
-[cite_start]Enquanto as grandes plataformas corporativas de gestão de compras exigem implantações complexas e de alto custo, este projeto busca **democratizar o uso da Inteligência Artificial no setor de suprimentos**[cite: 47, 83]. [cite_start]Ele oferece uma alternativa simples e acessível, focada estritamente no apoio à decisão estratégica por meio de análise preditiva automatizada[cite: 48, 78].
+O sistema foi estruturado em camadas (Apresentação, Aplicação e Inteligência Artificial) garantindo escalabilidade e facilidade de manutenção.
+
+**Inteligência Artificial e Processamento de Dados:**
+* **Python:** Linguagem base do projeto.
+* **Scikit-Learn:** Construção e treinamento dos modelos preditivos (Regressão, Random Forest, Gradient Boosting).
+* **Pandas & NumPy:** Limpeza, manipulação, pré-processamento e normalização dos dados históricos.
+* **Matplotlib:** Análise exploratória e visualização gráfica dos resultados experimentais.
+
+**Backend & Banco de Dados:**
+* **PostgreSQL:** Armazenamento estruturado de entidades (fornecedores, produtos, pedidos, logística).
+* **Flask / FastAPI:** Criação da API REST para comunicação entre a inteligência artificial e a interface.
+
+**Frontend:**
+* **HTML, CSS e JavaScript:** Interface limpa e responsiva para interação do usuário final.
+
+---
+
+## 📊 Avaliação e Validação dos Modelos
+Para garantir que as recomendações do motor sejam precisas e seguras para a tomada de decisão, os algoritmos foram submetidos a métricas estatísticas rigorosas para avaliar o erro de previsão de custos, incluindo:
+* **MAE (Erro Absoluto Médio)**
+* **RMSE (Raiz do Erro Quadrático Médio)**
+* **$R^{2}$ (Coeficiente de Determinação)**
+
+---
+
+## 🔮 Trabalhos Futuros
+A evolução contínua da ferramenta prevê a implementação das seguintes melhorias:
+- Implementação de algoritmos de **Deep Learning** para análise de padrões não lineares complexos.
+- Integração via API diretamente com sistemas ERP de mercado.
+- Incorporação de variáveis externas ao cálculo de TCO (variações cambiais, riscos geopolíticos e indicadores macroeconômicos).
+
+---
+
+## 👨‍💻 Autor
+
+**João Vitor da Silva Bast**  
+*Desenvolvedor com forte base em Python, focado em pesquisa operacional, modelagem matemática e construção de soluções inteligentes baseadas em dados.*
+
+
+* [E-mail](mailto:joao.bast@catolicasc.edu.br)
+* Universidade Católica de Santa Catarina
